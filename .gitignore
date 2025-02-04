@@ -1,0 +1,29 @@
+# Carpetas de configuración de Visual Studio
+.vs/
+.vscode/
+
+# Archivos de índices y temporales de Visual Studio
+*.vsidx
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Carpetas de compilación y binarios
+bin/
+obj/
+Debug/
+Release/
+
+# Archivos de configuración del sistema
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Archivos de logs y temporales
+*.log
+*.tmp
+
+# Configuración de caché de Rider o ReSharper
+.idea/
+*.sln.iml
