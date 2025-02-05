@@ -119,6 +119,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -128,14 +129,30 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="OpenGlResources.cpp" />
     <ClCompile Include="Program.cpp" />
+    <ClCompile Include="ProgramBuild.cpp" />
+    <ClCompile Include="Sphere.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ErrorMessages.hpp" />
     <ClInclude Include="Glfw.hpp" />
+    <ClInclude Include="OpenGlResources.h" />
+    <ClInclude Include="ProgramBuild.h" />
+    <ClInclude Include="ProgramKit.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Sphere.h" />
+    <ClInclude Include="TdContext.h" />
+    <ClInclude Include="TdFigure.h" />
+    <ClInclude Include="TypesDictionary.hpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include=".gitignore" />
+    <None Include="fragment_core.ghl" />
+    <None Include="vertex_core.ghl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ZX-Engine.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

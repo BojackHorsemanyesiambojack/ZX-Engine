@@ -13,9 +13,36 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Archivos de encabezado\ProgramResources">
+      <UniqueIdentifier>{c2d42983-af01-4c49-a800-2c4af991f45b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de encabezado\ProgramResources\OpenGlResources">
+      <UniqueIdentifier>{fa4f56f8-2ed9-46a7-83b5-069d1a4bb690}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de encabezado\ProgramResources\ProgramBuild">
+      <UniqueIdentifier>{cbef0350-ca64-477e-ab45-a73a94d378fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de encabezado\3d">
+      <UniqueIdentifier>{de6520bf-a716-4663-aa6c-49e3ff759231}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de encabezado\3d\Figures">
+      <UniqueIdentifier>{78a23a84-bd3d-43b8-9969-7c83876709d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de encabezado\3d\Context">
+      <UniqueIdentifier>{b65ed79c-6c4d-4af2-a0b1-f62690496417}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Program.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGlResources.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Sphere.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="ProgramBuild.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
   </ItemGroup>
@@ -26,10 +53,45 @@
     <ClInclude Include="ErrorMessages.hpp">
       <Filter>Archivos de recursos</Filter>
     </ClInclude>
+    <ClInclude Include="OpenGlResources.h">
+      <Filter>Archivos de encabezado\ProgramResources\OpenGlResources</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="ProgramKit.h">
+      <Filter>Archivos de encabezado\ProgramResources\OpenGlResources</Filter>
+    </ClInclude>
+    <ClInclude Include="ProgramBuild.h">
+      <Filter>Archivos de encabezado\ProgramResources\ProgramBuild</Filter>
+    </ClInclude>
+    <ClInclude Include="Sphere.h">
+      <Filter>Archivos de encabezado\3d\Figures</Filter>
+    </ClInclude>
+    <ClInclude Include="TdFigure.h">
+      <Filter>Archivos de encabezado\3d\Figures</Filter>
+    </ClInclude>
+    <ClInclude Include="TdContext.h">
+      <Filter>Archivos de encabezado\3d\Context</Filter>
+    </ClInclude>
+    <ClInclude Include="TypesDictionary.hpp">
+      <Filter>Archivos de recursos</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include=".gitignore">
       <Filter>Archivos de recursos</Filter>
     </None>
+    <None Include="fragment_core.ghl">
+      <Filter>Archivos de recursos</Filter>
+    </None>
+    <None Include="vertex_core.ghl">
+      <Filter>Archivos de recursos</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ZX-Engine.rc">
+      <Filter>Archivos de recursos</Filter>
+    </ResourceCompile>
   </ItemGroup>
 </Project>
